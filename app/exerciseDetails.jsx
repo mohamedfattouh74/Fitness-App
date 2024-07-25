@@ -18,11 +18,11 @@ export default function ExerciseDetails(){
             <ScrollView style={styles.detailsView}>
                 <Animated.Text entering={FadeInDown.duration(300).springify()} style={styles.exerciseText}>{capetalizeFirstLetter(item.name)}</Animated.Text>
 
-                <Animated.Text entering={FadeInDown.duration(300).delay(100).springify()} style={styles.detailsText}>Equipment: <Text style={styles.detailsInnerText}>{item.equipment}</Text></Animated.Text>
+                <Animated.Text entering={FadeInDown.duration(300).delay(100).springify()} style={styles.detailsText}>Equipment: <Text style={styles.detailsInnerText}>{capetalizeFirstLetter(item.equipment)}</Text></Animated.Text>
 
-                <Animated.Text entering={FadeInDown.duration(300).delay(200).springify()} style={styles.detailsText}>Secondary muscles: <Text style={styles.detailsInnerText}>{item.secondaryMuscles}</Text></Animated.Text>
+                <Animated.Text entering={FadeInDown.duration(300).delay(200).springify()} style={styles.detailsText}>Secondary muscles: <Text style={styles.detailsInnerText}>{capetalizeFirstLetter(item.secondaryMuscles)}</Text></Animated.Text>
 
-                <Animated.Text entering={FadeInDown.duration(300).delay(300).springify()} style={styles.detailsText}>Target: <Text style={styles.detailsInnerText}>{item.target}</Text></Animated.Text>
+                <Animated.Text entering={FadeInDown.duration(300).delay(300).springify()} style={styles.detailsText}>Target: <Text style={styles.detailsInnerText}>{capetalizeFirstLetter(item.target)}</Text></Animated.Text>
 
                 <Animated.Text entering={FadeInDown.duration(300).delay(400).springify()} style={styles.exerciseText}>Instructions</Animated.Text>
 
